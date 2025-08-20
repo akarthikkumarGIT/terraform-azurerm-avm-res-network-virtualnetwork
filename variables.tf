@@ -300,7 +300,7 @@ variable "peerings" {
   - `randomization_factor` - (Optional) The randomization factor to apply to the interval between retries. Defaults to 0.5.
 
 DESCRIPTION
-  nullable    = false
+  nullable    = true
 }
 
 variable "retry" {
@@ -341,7 +341,7 @@ variable "role_assignments" {
 
   > Note: only set `skip_service_principal_aad_check` to true if you are assigning a role to a service principal.
   DESCRIPTION
-  nullable    = false
+  nullable    = true
 }
 
 variable "subnets" {
