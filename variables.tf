@@ -253,7 +253,7 @@ variable "peerings" {
       randomization_factor = optional(number, 0.5)
     }), {})
   }))
-  default     = {}
+  default     = null
   description = <<DESCRIPTION
 (Optional) A map of virtual network peering configurations. Each entry specifies a remote virtual network by ID and includes settings for traffic forwarding, gateway transit, and remote gateways usage.
 
@@ -326,7 +326,7 @@ variable "role_assignments" {
     delegated_managed_identity_resource_id = optional(string, null)
     principal_type                         = optional(string, null)
   }))
-  default     = {}
+  default     = null
   description = <<DESCRIPTION
   (Optional) A map of role assignments to create on the <RESOURCE>. The map key is deliberately arbitrary to avoid issues where map keys maybe unknown at plan time.
 
